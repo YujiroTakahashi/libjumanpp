@@ -20,11 +20,11 @@ croco::Jumanpp::Jumanpp(std::string modelpath)
     JumanppContext *context = new JumanppContext;
 
     context->conf.modelFile = modelpath;
-    context->conf.rnnConfig.nceBias = 6;
-    context->conf.rnnConfig.unkConstantTerm = -5;
-    context->conf.rnnConfig.unkLengthPenalty = -3;
+    context->conf.rnnConfig.nceBias = 5.62844432562;
+    context->conf.rnnConfig.unkConstantTerm = -3.4748115191;
+    context->conf.rnnConfig.unkLengthPenalty = -2.92994951022;
     context->conf.rnnConfig.perceptronWeight = 1;
-    context->conf.rnnConfig.rnnWeight = 0.007;
+    context->conf.rnnConfig.rnnWeight = 0.0176;
 
     context->env.loadModel(context->conf.modelFile.value());
     context->env.setBeamSize(context->conf.beamSize);
