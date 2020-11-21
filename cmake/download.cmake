@@ -1,6 +1,6 @@
 if (NOT EXISTS ${JPP_SRC_DIR})
     file(DOWNLOAD
-        "https://github.com/ku-nlp/jumanpp/archive/v2.0.0-rc3.tar.gz"
+        "https://github.com/ku-nlp/jumanpp/releases/download/v2.0.0-rc3/jumanpp-2.0.0-rc3.tar.xz"
         ${CMAKE_SOURCE_DIR}/jumanpp.tgz
         EXPECTED_HASH SHA256=b5ff1e6f712224297454af7771f29ca5642fbe875de35ab850da2d78a67e17dc)
 
